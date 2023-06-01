@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int i,n,c=0,a;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        scanf("%d",&a);
+        c=0;
+        for(i=1;i<=a/2;i++)
+        {
+            if(i*i==a)
+            {
+                c+=1;
+            }
+        }
+        if(c>0)
+        {
+            printf("True
+");
+        }
+        else
+        {
+            printf("False
+");
+        }
+        n-=1;
+    }
+}
