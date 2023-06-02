@@ -10,7 +10,7 @@ int main()
             c+=i;
         }
     }
-    if(c>a)
+    if(c>i)
     {
         printf("True");
     }
@@ -18,5 +18,4 @@ int main()
     {
         printf("False");
     }
-    return 0;
 }
