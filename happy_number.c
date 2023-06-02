@@ -4,9 +4,9 @@ int isHappyNumber(int num)
     int rem = 0, sum = 0;   
     while(num > 0)
     {    
-        rem = num%10;//48%10=8,4%10    
-        sum = sum + (rem*rem);//0+64;64+_    
-        num = num/10;//48/10=4
+        rem = num%10;    
+        sum = sum + (rem*rem);    
+        num = num/10;    
     }    
     return sum;    
 }    
@@ -14,11 +14,11 @@ int isHappyNumber(int num)
 int main()    
 {    
     int num,result;
-    scanf("%d",&num);//48
-    result=num;//res=48
+    scanf("%d",&num);
+    result=num;
     while(result != 1 && result != 4)
     {    
-        result = isHappyNumber(result);//    
+        result = isHappyNumber(result);    
     }    
     if(result == 1)
     {    
