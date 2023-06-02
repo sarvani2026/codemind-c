@@ -1,34 +1,33 @@
-#include<stdio.h>
+# include <stdio.h>
+# include <string.h>
+
 int main()
 {
-    int v,k=0;
-    scanf("%d",&v);
-    while(v!=1)
-    {
-        if(v%2==0)
-        {
-            v/=2;
-        }
-        else if(v%3==0)
-        {
-            v/=3;
-        }
-        else if(v%5==0)
-        {
-            v/=5;
-        }
-        else
-        {
-            k++;
-            break;
-        }
-    }
-    if(k!=0)
-    {
-        printf("Not Ugly Number");
-    }
-    else
-    {
-        printf("Ugly Number");
-    }
+int n,x=0;
+  scanf("%d",&n);
+       while (n != 1) 
+       {  
+            if ( n% 5 == 0) 
+            {  
+                n /= 5;  
+            } 
+            else if (n % 3 == 0) 
+            {  
+                n /= 3;  
+            } 
+            else if (n % 2 == 0) 
+            {  
+                n /= 2;  
+            } 
+            else 
+            {  
+                printf("Not Ugly Number"); 
+                x = 1;  
+                break;  
+            }  
+        } 
+		        if (x==0)
+		        { 
+                printf("Ugly Number");
+                }
 }
