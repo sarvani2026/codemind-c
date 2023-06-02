@@ -10,11 +10,12 @@ int fun(int n)
         return 1;
     }
     return fun(n-1)+fun(n-2)+fun(n-3);
+    
 }
 int main()
 {
-    int dis,res;
-    scanf("%d",&dis);
-    res=fun(dis);
-    printf("%d",res);
+    int d,r;
+    scanf("%d",&d);
+    r=fun(d);
+    printf("%d",r);
 }
