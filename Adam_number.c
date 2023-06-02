@@ -1,23 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int n,d,res1=0,res2=0,res3=0,res4=0,d1;
-    scanf("%d",&n);
-    res1=n*n;
+    int n,s,d,y=0,sd,t,r=0;
+    scanf("%d",&n);//12
+    s=n*n;//144
+    t=n;//12
     while(n)
     {
         d=n%10;
-        res2=res2*10+d;
+        r=r*10+d;//21
         n=n/10;
     }
-    res3=res2*res2;
-    while(res3)
+    sd=r*r;//441
+    while(sd)
     {
-        d1=res3%10;
-        res4=res4*10+d1;
-        res3=res3/10;
+        t=sd%10;
+        y=y*10+t;//144
+        sd=sd/10;
     }
-    if(res1==res4)
+    if(s==y)
     {
         printf("True");
     }
